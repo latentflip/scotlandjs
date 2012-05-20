@@ -19,6 +19,56 @@
 		<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
 
 		<link rel="stylesheet" href="lib/zenburn.css">
+    <style>
+      section.l-headline h1 { line-height: 600px!important; }
+
+      section.team {
+        height: 208px;
+        margin-top: 150px;
+      }
+      section.team .team-plus{
+        font-size: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+        top: 5px;
+      }
+        section.team .team-member, section.team .team-member img {
+          width: 200px;
+        }
+        section.team .team-member img {
+          vertical-align: middle;
+          margin: 0!important;
+        }
+        section.team .team-member-arrow {
+          font-size: 200px;
+          position: relative;
+          top: 22px;
+        }
+
+        /* 3D Effect */
+        section.team .team-member-arrow, section.team .team-plus {
+          text-shadow: 0 1px 0 #CCC, 0 2px 0 #C9C9C9, 0 3px 0 #BBB, 0 4px 0 #B9B9B9, 0 5px 0 #AAA, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 20px 20px rgba(0, 0, 0, .15);
+          color: #eee;
+        }
+        section.team .team-plus {
+          text-shadow: 0 5px 10px rgba(0, 0, 0, .25), 0 20px 20px rgba(0, 0, 0, .15);
+        }
+
+
+      img.nostyle {
+        border: none!important;
+        background: none!important;
+        -webkit-box-shadow: none!important;
+        -moz-box-shadow: none!important;
+        box-shadow: none!important;
+      }
+
+      section.resource-list h2 {
+        text-transform: none!important;
+      }
+
+    </style>
 	</head>
 	
 	<body>
@@ -27,9 +77,80 @@
 
 			<!-- Used to fade in a background when a specific slide state is reached -->
 			<div class="state-background"></div>
-			
+
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+        <section>
+          <h2>Nought to real-time, multiplayer game in 16 hours with Pusher</h2>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <h3>Philip Roberts</h3>
+        </section>
+
+        <section>
+          <p>
+            At a recent hack-weekend, a team of 3 built a real-time, massively multi-player game in 16 hours using Backbone, websockets with Pusher, Rails and lots of Red Bull. On top of all that, the game was based on Shakespeare’s Macbeth!
+          <p>
+            Hear about how we built the game, how event-driven programming helped make application modular and quick to build, and why WebSockets are awesome. And as a bonus feature, learn why WebSockets will quickly drive you insane.
+        </section>
+
+        <section>
+          <ul>
+            <li>
+              There won’t be much code in this talk, but I will do a short code-based intro to websockets/Pusher for people who haven’t seen them before. The majority of the talk will be split between architecture (the event-driven stuff), and how that affected the way we built the game.
+            <li>It will be technical, but also quite light-hearted (dare I say a little bit funny?) as there are quite a few fun anecdotes from the weekend about websockets driving us mental.
+            <li>I have previously blogged about the experience at Culture Hack where this game was written (http://blog.latentflip.com/post/22215449880/shakey-technical) just to give you an idea of where I am coming from.
+          </ul>
+        </section>
+
+
+        <section>
+          <ul>
+            <li>Background to the game (2mins)</li>
+            <li>Intro to websockets(4 mins)</li>
+            <li>How we architected the game (5mins)</li>
+            <li>How we built the game (5mins)</li>
+            <li>Anecdotes</li>
+          </ul>
+        </section>
+
+        <section class='resource-list'>
+          <h2>16 Hours<br><br>Shakespeare<br>3 Developers<br>2 Artists<br><br>Rails<br>Backbone.js<br>Pusher</h2>
+        </section>
+
+        <section class='l-headline'>
+          <h1>Culture Hacking</h1>
+        </section>
+
+        <section class=team>
+          <span class="team-member team-member-arrow">⬋</span>
+          <span class=team-plus>+</span>
+          <span class=team-member>
+            <img src="https://twimg0-a.akamaihd.net/profile_images/2105246247/IMG_0455.jpg">
+          </span>
+          <span class=team-plus>+</span>
+          <span class=team-member>
+            <img src="https://twimg0-a.akamaihd.net/profile_images/1680611621/avatar.jpg">
+          </span>
+        </section>
+
+        <section class=macbeth>
+          <h1>Macbeth</h1>
+          <img src="assets/macduff.png" class="nostyle" height=400>
+        </section>
+
+        <section class='l-headline'>
+          <h1>▶</h1>
+        </section>
+
+        <section class='l-headline'>
+        <h1>Hands-up
+        </section>
+
+
+
+
 				<section>
 					<h1>Reveal.js</h1>
 					<h3 class="inverted">CSS 3D Presentations</h3>
