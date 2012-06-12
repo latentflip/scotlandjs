@@ -779,7 +779,7 @@ var Reveal = (function(){
 		navigateRight: navigateRight,
 		navigateUp: navigateUp,
 		navigateDown: navigateDown,
-    routes: routes,
+    availableRoutes: availableRoutes,
 
 		// Forward event binding to the reveal DOM element
 		addEventListener: function( type, listener, useCapture ) {

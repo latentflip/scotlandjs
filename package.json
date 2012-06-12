@@ -1,0 +1,8 @@
+{
+  "name": "ScotlandJS",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "x.x.x",
+    "socket.io": "x.x.x"
+  }
+}

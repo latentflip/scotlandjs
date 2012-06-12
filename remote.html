@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      html, body {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        
+        font-family: 'Lato', Times, 'Times New Roman', serif;
+        font-size: 36px;
+        font-weight: 200;
+        letter-spacing: -0.02em;
+        
+        color: #eee;
+        
+        width: 100%;
+        height: 100%;
+
+        min-height: 600px;
+      }
+      html, body, #reveal-remote {
+        background: #1c1e20;
+        height: 100%;
+        min-height: 100%;
+      }
+
+      .controls {
+        width: 100%;
+        min-height: 100%;
+        height: 100%;
+        display: table;
+        position: relative;
+      }
+      .controls .control-row {
+        display: table-row;
+        width: 100%;
+        height: 25%;
+        position: relative;
+      }
+      .controls .control-row-big {
+        height: 50%;
+      }
+      .controls a {
+        display: table-cell;
+        text-decoration: none;
+      }
+
+      .up, .down, .left, .right {
+        width: 50%;
+      }
+
+      .up, .down {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 25%;
+      }
+      .down { top: 75%; }
+      /*.left { background: red; }
+      .right { background: green; }
+      .up { background: blue; }
+      .down { background: cyan; }*/
+
+      .up, .down, .left, .right {
+        vertical-align: middle;
+        text-align: center;
+      }
+      .left { text-align: left; }
+      .right { text-align: right; }
+
+      .left span, .right span {
+        top: -10px;
+      }
+      .down span { 
+        top: 120px;
+      }
+      .up span { 
+        top: 20px;
+      }
+      .up span, .down span, .left span, .right span {
+        position: relative;
+        width:0; 
+        height:0;
+        font-size:0px;
+        line-height:0px;
+        margin-top: 50%;
+      }
+      .up span {
+        border-left:80px solid transparent;
+        border-right:80px solid transparent;
+        border-bottom:80px solid #71E9F4;
+      }
+      .down span {
+        border-left:80px solid transparent;
+        border-right:80px solid transparent;
+        border-top:80px solid #71E9F4;
+      }
+      .left span {
+        border-right:80px solid #71E9F4;
+        border-top:80px solid transparent;
+        border-bottom:80px solid transparent;
+      }
+      .right span {
+        border-left:80px solid #71E9F4;
+        border-top:80px solid transparent;
+        border-bottom:80px solid transparent;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div id="reveal-remote">
+      <div class="controls">
+        <div class='control-row'>
+          <a class="up enabled" href="#"><span></span></a>
+        </div>
+        <div class='control-row control-row-big'>
+          <a class="left enabled" href="#"><span></span></a>
+          <a class="right enabled" href="#"><span></span></a>
+        </div>
+        <div class='control-row'>
+          <a class="down enabled" href="#"><span></span></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/zepto.js"></script>
+    <script src="js/remote_remote.js"></script>
+
+    <script>
+      Remote.initialize();
+
+      $(document).ready(function() {
+        $('#reveal-remote').swipeLeft(Remote.navigateRight);
+        $('#reveal-remote').swipeRight(Remote.navigateLeft);
+        $('#reveal-remote').swipeUp(Remote.navigateDown);
+        $('#reveal-remote').swipeDown(Remote.navigateUp);
+      });
+    </script>
+  </body>
+</html>
