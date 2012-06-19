@@ -1,0 +1,25 @@
+Hello
+===
+Hello
+Normally I am
+
+Story
+===
+Tell you a story
+1. Short space of time
+2.
+3.
+
+
+Culture Hack Scotland
+===
+Background: Access to cultural data
+Awesome - laid back, creative
+Festivals, universities share data
+Shakespeare's Macbeth caught our eye
+
+Shakey
+or
+A massively multiplayer shakespeare recital with tomatoes and fart sounds - over websockets.
+===
+t
