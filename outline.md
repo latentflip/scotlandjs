@@ -21,6 +21,8 @@ Before I go any further I want to quickly give proper credit to the rest of the 
 ## notes
 To give you a little background, Culture Hack Scotland is a hack weekend where a room of developers are given access to a heap of cultural data, and they try to build interesting, useful, fun and beautiful things from it. 
 
+I've attended a number of hack events similar to culture hack over the last few years, and culture hack is by far the best that I have attended. It's incredibly creative, as there isn't too much structure, or desire for a particular outcome - it's more like here's some awesome people, and some random data - go be creative.
+
 This year the data included things like, the energy consumption of some of edinburgh university's buildings every half hour for an entire year; and all the event information for this years Fringe. But the dataset that caught our eye was a fully marked up XML copy of Shakespeare's Macbeth.
 
 
